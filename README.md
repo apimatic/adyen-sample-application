@@ -46,7 +46,7 @@ Node.js 12+
 1. Clone this repo:
 
 ```
-git clone https://github.com/adyen-examples/adyen-node-online-payments.git
+git clone https://github.com/mehnoorsiddiqui/adyen-sample-app
 ```
 2. Navigate to the SDK directory( Adyen+Checkout+API) and install dependencies:
 
