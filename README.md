@@ -4,7 +4,7 @@
 
 * Open your [Adyen Test Account](https://ca-test.adyen.com/ca/ca/overview/default.shtml) and create a set of [API keys](https://docs.adyen.com/user-management/how-to-get-the-api-key).
 * Go to [gitpod account variables](https://gitpod.io/variables).
-* Set the `ADYEN_API_KEY`, `ADYEN_CLIENT_KEY`, `ADYEN_HMAC_KEY` and `ADYEN_MERCHANT_ACCOUNT variables`.
+* Set the `ADYEN_BASIC_AUTH_USERNAME`,`ADYEN_BASIC_AUTH_PASSWORD`, `ADYEN_CLIENT_KEY`, `ADYEN_HMAC_KEY` and `ADYEN_MERCHANT_ACCOUNT variables`.
 * Click the button below!
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/adyen-examples/adyen-node-online-payments)
@@ -48,6 +48,11 @@ Node.js 12+
 ```
 git clone https://github.com/adyen-examples/adyen-node-online-payments.git
 ```
+2. Navigate to the SDK directory( Adyen+Checkout+API) and install dependencies:
+
+```
+npm install
+```
 
 2. Navigate to the root directory and install dependencies:
 
@@ -58,7 +63,7 @@ npm install
 ## Usage
 
 1. Create a `./.env` file with all required configuration
-   - [API key](https://docs.adyen.com/user-management/how-to-get-the-api-key)
+   - [Basic Auth username/password](https://docs.adyen.com/development-resources/api-credentials#basic-authentication)
    - [Client Key](https://docs.adyen.com/user-management/client-side-authentication)
    - [Merchant Account](https://docs.adyen.com/account/account-structure)
    - [HMAC Key](https://docs.adyen.com/development-resources/webhooks/verify-hmac-signatures)
@@ -67,7 +72,8 @@ Remember to include `http://localhost:8080` in the list of Allowed Origins
 
 ```
 PORT=8080
-ADYEN_API_KEY="your_API_key_here"
+ADYEN_BASIC_AUTH_USERNAME="your_API_basic_auth_username_here"
+ADYEN_BASIC_AUTH_PASSWORD="your_API_basic_auth_password_here"
 ADYEN_MERCHANT_ACCOUNT="your_merchant_account_here"
 ADYEN_CLIENT_KEY="your_client_key_here"
 ADYEN_HMAC_KEY="your_hmac_key_here"
