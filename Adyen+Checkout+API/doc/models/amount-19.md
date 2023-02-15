@@ -1,0 +1,25 @@
+
+# Amount 19
+
+The amount of the payment.
+
+## Structure
+
+`Amount19`
+
+## Fields
+
+| Name | Type | Tags | Description |
+|  --- | --- | --- | --- |
+| `currency` | `string` | Required | The three-character [ISO currency code](https://docs.adyen.com/development-resources/currency-codes).<br>**Constraints**: *Minimum Length*: `3`, *Maximum Length*: `3` |
+| `value` | `number` | Required | The amount of the transaction, in [minor units](https://docs.adyen.com/development-resources/currency-codes). |
+
+## Example (as JSON)
+
+```json
+{
+  "currency": "currency0",
+  "value": 64
+}
+```
+
