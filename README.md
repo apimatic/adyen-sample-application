@@ -7,7 +7,7 @@
 * Set the `ADYEN_BASIC_AUTH_USERNAME`,`ADYEN_BASIC_AUTH_PASSWORD`, `ADYEN_CLIENT_KEY`, `ADYEN_HMAC_KEY` and `ADYEN_MERCHANT_ACCOUNT variables`.
 * Click the button below!
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/adyen-examples/adyen-node-online-payments)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mehnoorsiddiqui/adyen-sample-app)
 
 _NOTE: To allow the Adyen Drop-In and Components to load, you have to add `https://*.gitpod.io` as allowed origin for your chosen set of [API Credentials](https://ca-test.adyen.com/ca/ca/config/api_credentials_new.shtml)_
 
@@ -54,7 +54,7 @@ git clone https://github.com/mehnoorsiddiqui/adyen-sample-app
 npm install
 ```
 
-2. Navigate to the root directory and install dependencies:
+3. Navigate to the root directory and install dependencies:
 
 ```
 npm install
